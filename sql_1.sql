@@ -4,8 +4,7 @@ CREATE TABLE book(
     title VARCHAR(50),
     author VARCHAR(30),
     price DECIMAL(8, 2),
-    amount INT
-);
+    amount INT);
 -- 2. Занесите новую строку в таблицу book
 INSERT INTO book(book_id, title, author, price, amount)
     VALUES('1', 'Мастер и Маргарита', 'Булгаков М.А.', '670.99', '3');
