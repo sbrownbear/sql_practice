@@ -39,3 +39,10 @@ FROM buy
     JOIN book USING(book_id)
 GROUP BY buy_id
 ORDER BY buy_id;
+
+-- 6. Вывести номера заказов (buy_id) и названия этапов, на которых они в данный момент находятся. Если заказ 
+-- доставлен – информацию о нем не выводить. Информацию отсортировать по возрастанию buy_id
+SELECT buy_id, name_step
+FROM buy_step JOIN step USING(step_id)
+WHERE date_step_beg AND date_step_end IS NULL
+ORDER BY 1;
