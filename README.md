@@ -1,6 +1,6 @@
 In this repo I publish the code created during the study of practice sql.
 
-Основы реляционной модели и SQL
+#Основы реляционной модели и SQL
 
 sql_1.sql - Отношение (таблица)
 
