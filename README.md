@@ -1,4 +1,3 @@
-# sql_practice
 In this repo I publish the code created during the study of practice sql.
 
 ## Основы реляционной модели и SQL
