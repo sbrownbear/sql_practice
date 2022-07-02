@@ -30,6 +30,10 @@ In this repo I publish the code created during the study of practice sql.
 
 `sql_13.sql` - База данных «Интернет-магазин книг», запросы на выборку_2
 
+## Ответы с сайта [sql-ex.ru](https://sql-ex.ru/)
+
+`sql-exru_1-10.sql` - решение задач с 1 по 10
+
 # Шпаргалка
 __*SQL*__ – декларативный ЯП, для управления данными в реляционной базе данных
 
