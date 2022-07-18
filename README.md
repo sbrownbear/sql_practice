@@ -32,4 +32,6 @@ In this repo I publish the code created during the study of practice sql.
 
 ## Ответы с сайта [sql-ex.ru](https://sql-ex.ru/)
 
-`sql-exru_1-10.sql` - решение задач с 1 по 10
+`sql-exru_1-10.sql` - Решение задач с 1 по 10
+
+`sql-exru_11-20.sql` - Решение задач с 11 по 20
