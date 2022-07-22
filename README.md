@@ -35,3 +35,5 @@ In this repo I publish the code created during the study of practice sql.
 `sql-exru_1-10.sql` - Решение задач с 1 по 10
 
 `sql-exru_11-20.sql` - Решение задач с 11 по 20
+
+`sql-exru_21-30.sql` - Решение задач с 21 по 30
