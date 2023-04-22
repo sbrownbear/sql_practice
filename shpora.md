@@ -1,78 +1,53 @@
-# Шпаргалка
-__*SQL*__ – декларативный ЯП, для управления данными в реляционной базе данных
+## Базовые команды. Теоритическую баз по SQL можно посмотреть [в моем репозитории здесь](https://github.com/sbrownbear/Konoplev_qa/blob/main/SQL.md).
 
-__*Реляционная БД*__ – есть таблицы, имеют четкую структуру, как-то связанны между собой
+__SELECT__ - возвращает информацию из таблицы 
 
-__*SELECT*__ - получение информации из таблицы 
+`SELECT * FROM table_name;`
 
-`SELECT * FROM <table_name>;`
+__DISTINCT__ - возвращает только неповторяющиеся данные из таблицы
 
-__*INSERT INTO*__ - добавление данных в таблицу 
+`SELECT DISTINCT col_name1, col_name2 FROM table_name;`
 
-`INSERT INTO <table_name> (<col_name1>, <col_name2>, <col_name3>, …) VALUES (<value1>, <value2>, <value3>, …);`
+__INSERT INTO__ - добавление данных в таблицу 
 
-__*UPDATE*__ - команда для обновления данных таблицы 
+`INSERT INTO table_name (col_name1, col_name2, col_name3) VALUES (value1, value2, value3);`
 
-`UPDATE <table_name> SET <col_name1> = <value1>, <col_name2> = <value2>, ... WHERE <condition>;`
+__UPDATE__ - команда для обновления данных таблицы 
 
-__*For update*__ - тоже самое но ручками
+`UPDATE table_name SET col_name1 = value1, col_name2 = value2, ... WHERE condition;`
 
-__*DELETE FROM <table_name>*__ - используется для удаления данных из таблицы.
+__ORDER BY ASC__ - сортировка по возрастанию, 
 
-__*GROUP BY*__ - часто используется с агрегатными функциями, такими как __*COUNT, MAX, MIN, SUM и AVG*__, для группировки выходных значений. 
+__ORDER BY DESC__ - сортировка по убыванию
 
-`SELECT <col_name1>, <col_name2>, …`
+`SELECT * FROM user ORDER BY name DESC;`
 
-`FROM <table_name>`
+__LIKE__ - специальные символы в шаблонах. __%__ - любое кол-во символов (включая 0), _ - ровно один символ. 
 
-`GROUP BY <col_namex>;`
+`WHERE col_name LIKE «%Blond%»;`
 
-__*DISTINCT*__ - в столбцах таблицы могут содержаться повторяющиеся данные. Используйте SELECT DISTINCT для получения только неповторяющихся данных.
+__GROUP BY__ - группировка, используется с агрегатными функциями __(COUNT, MAX, MIN, SUM, AVG)__
 
-`SELECT DISTINCT <col_name1>, <col_name2> FROM <table_name>;`
+`SELECT col_name1, col_name2, … FROM table_name GROUP BY col_namex;`
 
-__*JOIN*__ - используется для связи двух и более таблиц с помощью общих атрибутов внутри них
+__HAVING__ - используется вместе с группировкой, WHERE использовать нельзя
 
-`SELECT <col_name1>, <col_name2>, …`
+`SELECT COUNT(course_id), dept_name FROM course GROUP BY dept_name HAVING COUNT(course_id >1);`
 
-`FROM <table_name1>`
+__JOIN__ - используется для связи двух и более таблиц с помощью общих атрибутов внутри них
 
-`JOIN <table_name2>`
+`SELECT col_name1, col_name2, … FROM table_name1 JOIN table_name2 ON table_name1.col_namex = table2.col_namex;`
 
-`ON <table_name1.col_namex> = <table2.col_namex>;`
+__DELETE__ - используется для удаления данных из таблицы. 
 
-__*TRUNCATE*__ - операция мгновенного удаления всех строк в таблице
+`DELETE FROM table_name;`
+
+__TRUNCATE__ - операция мгновенного удаления всех строк в таблице. 
 
 `TRUNCATE TABLE table_name;`
 
-__*DROP TABLE*__ - удалить всю таблицу целиком.
+__DROP__ - удалить всю таблицу целиком.
 
-__*HAVING*__ - было добавлено в SQL по той причине, что WHERE не может использоваться для работы с агрегатными функциями.
+`DROP TABLE table_name;`
 
-`SELECT COUNT(course_id), dept_name`
-
-`FROM course`
-
-`GROUP BY dept_name`
-
-`HAVING COUNT(course_id)>1;`
-
-__*Агрегатные функции*__ - математические функции
-
-__*SUM (col_name)*__ - возвращает сумму значений в данном столбце;
-
-__*COUNT (col_name)*__ - возвращает количество строк;
-
-__*AVG (col_name)*__ - возвращает среднее значение данного столбца;
-
-__*MIN (col_name)*__ - возвращает наименьшее значение данного столбца;
-
-__*MAX (col_name)*__ - возвращает наибольшее значение данного столбца.
-
-__*NVL (1, 2)*__ - если значение 1 пустое, берет 2
-
-__*VAR*__ - отличающееся значение
-
-__*Внешний ключ*__ — это ключ, используемый для связывания двух таблиц друг с другом. Внешний ключ — это поле (или набор полей) в одной таблице, ссылающееся на первичный ключ в другой таблице.
-
-__*Первичный ключ*__ — это поле в таблице, которое однозначно идентифицирует каждую строку/запись в таблице базы данных. Первичные ключи должны содержать уникальные значения.
+__Агрегатные функции__ – математические функции __SUM__ возвращает сумму; __COUNT__ количество строк; __AVG__ среднее значение; __MIN__ наименьшее значение; __MAX__ наибольшее значение; __NVL (1, 2)__ если значение 1 пустое, берет 2; __VAR__ отличающееся значение
