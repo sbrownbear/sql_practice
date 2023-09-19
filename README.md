@@ -28,6 +28,6 @@
 
 ## other - Остальное
 
-- `shpora.md` - __Шпоргалка по SQL__
+- `shpora.md` - __Шпаргалка по SQL__
 
 - `the_most_frequent_requests.sql` - __Самые частые запросы в SQL__
