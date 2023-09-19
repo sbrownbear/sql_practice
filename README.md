@@ -1,39 +1,33 @@
-In this repo I publish the code created during the study of practice sql.
+# Практика SQL
 
-## Основы реляционной модели и SQL
+## modul_1_base_sql_commands - Базовые команды SQL с курса [Stepik](https://stepik.org/course/63054/syllabus)
 
-`sql_1.sql` - Отношение (таблица)
+- `1-create_table.sql` - __Отношение (таблица).__ Создание таблицы, добавление строк (*CREATE TABLE, INSERT INTO VALUE*).
 
-`sql_2.sql` - Выборка данных
+- `2-select.sql` - __Выборка данных.__ Присвоение новых имен, лог. функции, выборка с условием, логические операции, сортировка (*AS, IF, WHERE, AND, OR, NOT, BETWEEN, IN, ORDER BY, LIKE*).
 
-`sql_3.sql` - Запросы, групповые операции
+- `3-select_group_operations.sql` - __Запросы, групповые операции.__ Выборка уникальных элементов, группировка, сортировка (*SELECT DISTINCT, GROUP BY, SUM, COUNT, AVG, MIN, MAX, HAVING*).
 
-`sql_4.sql` - Вложенные запросы 
+- `4-nested_queries.sql` - __Вложенные запросы.__ Оператор IN. Операторы ANY и ALL. Вложенный запрос после SELECT (*IN, ANY, ALL*).
 
-`sql_5.sql` - Запросы корректировки данных
+- `5-data_correction_requests.sql` - __Запросы корректировки данных.__ Добавление записей из другой таблицы. Вложенные запросы. Запрос на обновление нескольких столбцов/таблиц. Запросы на удаление. Создание таблицы на основе данных из другой (*CREATE TABLE, INSERT INTO VALUE, NOT IN, UPDATE SET, DELETE FROM, CREATE TABLE AS*).
 
-`sql_6.sql` - Таблица "Командировки", запросы на выборку
+## modul_2_join - Запросы SQL к связанным таблицам с курса [Stepik](https://stepik.org/course/63054/syllabus)
 
-`sql_7.sql` - Таблица "Нарушения ПДД", запросы корректировки
+- `1-relationships_tables.sql` - __Связи между таблицами.__ Создание таблиц с первичными и вторичными ключами. Создание связей между таблицами (*PRIMARY_KEY, FOREIGN_KEY, REFERENCES, NOT_NULL, ON DELETE CASCADE*).
 
-`sql_8.sql` - Поиск по ключевым словам
+- `2-select_join.sql` - __Запросы на выборку, соединение таблиц.__ Внутреннее, внешнее и перекрестное соединение таблиц. Выборка нескольких таблиц. Операция соединения (*INNER JOIN, LEFT JOIN, RIGHT JOIN, CROSS JOIN, USING*).
 
-## Запросы SQL к связанным таблицам
+## sql_ex_ru - Выполнение задач с сайта [sql-ex.ru](https://sql-ex.ru/)
 
-`sql_9.sql` - Связи между таблицами
+- `sql-exru_1-10.sql` - __Решение задач с 1 по 10__
 
-`sql_10.sql` - Запросы на выборку, соединение таблиц
+- `sql-exru_11-20.sql` - __Решение задач с 11 по 20__
 
-`sql_11.sql` - Запросы корректировки, соединение таблиц
+- `sql-exru_21-30.sql` - __Решение задач с 21 по 30__
 
-`sql_12.sql` - База данных «Интернет-магазин книг», запросы на выборку_1
+## other - Остальное
 
-`sql_13.sql` - База данных «Интернет-магазин книг», запросы на выборку_2
+- `shpora.md` - __Шпоргалка по SQL__
 
-## Ответы с сайта [sql-ex.ru](https://sql-ex.ru/)
-
-`sql-exru_1-10.sql` - Решение задач с 1 по 10
-
-`sql-exru_11-20.sql` - Решение задач с 11 по 20
-
-`sql-exru_21-30.sql` - Решение задач с 21 по 30
+- `the_most_frequent_requests.sql` - __Самые частые запросы в SQL__

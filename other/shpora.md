@@ -1,4 +1,4 @@
-## Перечисление базовых команд. Теоритическую базу по SQL можно посмотреть [в моем репозитории здесь](https://github.com/sbrownbear/Konoplev_qa/blob/main/SQL.md).
+## Перечисление базовых команд. Теоритическую базу по SQL можно посмотреть в репозитории [здесь](https://github.com/sbrownbear/qa/blob/main/5-SQL_for_testing.md).
 
 __SELECT__ - возвращает информацию из таблицы 
 
